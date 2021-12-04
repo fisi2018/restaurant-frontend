@@ -5,7 +5,7 @@ export default function Home(){
     const {push}=useRouter();
     return(
         <Layout>
-            <section className="bg-main-restaurant min-h-screen flex items-center" >
+            <section className="bg-main-restaurant bg-cover min-h-screen flex items-center" >
                 <aside className="p-4 max-w-2xl flex items-center sm:items-start flex-col" >
                     <h1 className=" text-6xl sm:text-8xl text-white font-bold" >Bienvenido </h1>
                     <p className="text-xl text-center sm:text-left sm:text-2xl text-white">Para poder ocupar todos los servicios de nuestra plataforma es necesario que se registre</p>
