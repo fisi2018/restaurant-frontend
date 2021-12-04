@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .input-form {
+    @apply focus:border-none focus:ring-0 transition-all duration-300 placeholder-gray-400 border-gray-300 mb-4 rounded-xl;
+  }
+  .restaurant-card {
+    @apply relative cursor-pointer overflow-hidden before:z-20 before:shadow-inner-md before:block before:w-full before:h-full before:absolute before:top-0 before:left-0;
+  }
+  .card-img {
+    @apply transition-transform bg-center duration-500 z-10 bg-cover w-full h-full;
+  }
+  .restaurant-card > span {
+    @apply transition-transform duration-1000 z-30 absolute bottom-2 w-full flex flex-col items-center;
+  }
+  .restaurant-card > span > h2 {
+    @apply text-white font-bold text-2xl;
+  }
+  .restaurant-card > span > p {
+    @apply text-white text-sm tracking-widest;
+  }
+  .li-aside-profile {
+    @apply w-full flex items-center relative h-12 transition-all duration-500;
+  }
+  .a-aside-profile {
+    @apply w-full overflow-hidden relative flex items-center h-full transition-all duration-500 rounded-lg;
+  }
+  .span-icon-profile {
+    @apply absolute px-0 flex items-center rounded-lg p-0 text-white justify-center left-2 transition-all duration-500;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  outline: 0;
+}
+.restaurant-card:hover > div {
+  transform: scale(1.2);
+}
+.button-aside:hover > span,
+.button-aside:hover > h3 {
+  color: black;
+}
+.restaurant-card:hover > span {
+  transform: translateY(-1rem);
+}
+.card-food:hover > article {
+  transform: scale(1.2);
+}
+.card-food:hover > div {
+  transform: translateY(-1rem);
+}
+.card-food:hover > #info {
+  transform: translateX(1.5rem);
+}
+.card-food:hover > #add {
+  transform: translateX(-1.5rem);
+}
