@@ -12,7 +12,7 @@ const initForm={
     address:"",
     phone:""
 }
-export default function OrderCard({order,removeOrder,userId,index,token,socket,setOrdenDb}){
+export default function OrderCard({order,removeOrder,userId,index,token}){
     const {form,handleChange}=useForm(initForm,validationInfo);
     const [loading,setLoading]=useState(false);
     const submitOrder=async()=>{
