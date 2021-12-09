@@ -1,3 +1,5 @@
 export const useLoader=()=>{
-    
+    return{
+        
+    }
 }
