@@ -3,9 +3,9 @@ import Layout from "../components/layout";
 export default function Contact(){
     return(
         <Layout>
-            <section className="bg-hdr-wood flex justify-center items-center " >
-                <div className="flex flex-col items-center pt-16" >
-                    <h1 className="text-white font-black text-3xl mb-6 mt-12 " >Contáctanos</h1>
+            <section className="bg-hdr-wood flex justify-center min-h-screen items-center " >
+                <div className="flex flex-col  items-center pt-16" >
+                    <h1 className="text-white font-black xl:text-5xl text-3xl mb-6 mt-12 " >Contáctanos</h1>
                     <aside className="flex flex-col divide-y-2 md:divide-y-0 md:flex-row bg-white p-4 md:divide-x divide-gray-500 " >
                         <div className=" flex py-8 flex-col items-center px-4" >
                             <img className="w-20 h-auto" src="https://cdn.pixabay.com/photo/2014/07/10/14/58/letters-389108_1280.png" />

@@ -12,7 +12,7 @@ module.exports = {
       backgroundImage:{
         "form-login":`url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_1280.jpg")`,
         "main-restaurant":`url("https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg")`,
-        "entrada":`url("https://cdn.pixabay.com/photo/2015/09/02/12/43/food-918639_1280.jpg")`,
+        "entrada":`url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pcrm.org%2Fsites%2Fdefault%2Ffiles%2Fensalada-quinoa-frijoles-5.jpg&f=1&nofb=1")`,
         "main-plate":`url("https://www.diariamenteali.com/medias/receta-de-arroz-con-mariscos-1900Wx500H?context=bWFzdGVyfHJvb3R8MjU4OTQwfGltYWdlL2pwZWd8aDcyL2g2YS85MDc0MTg2NjgyMzk4L3JlY2V0YS1kZS1hcnJvei1jb24tbWFyaXNjb3NfMTkwMFd4NTAwSHw3NzczNmEyZDk0MDUxMzgxNDczNWY0MjM0ZTg1ODZmNmFjNThlZTE3NmM1NjIwZGI1YzViMzNhYWUyMDI2ODlm")`,
         "bebida":`url("https://cdn.pixabay.com/photo/2017/02/01/10/46/cocktail-2029572_1280.jpg")`,
         "postre":`url("https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_1280.jpg")`,

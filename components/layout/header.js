@@ -9,7 +9,7 @@ export default function Header(){
     const {scroll}=useScroll();
     const [panel,setPanel]=useState(false);
     return(
-        <header className={`fixed transition duration-300 border-b-2 border-opacity-25 z-40 right-0 left-0 top-0 py-6 shadow-inner-header flex flex-col lg:flex-row justify-around items-center ${scroll && "bg-gray-900"} `} >
+        <header className={`fixed transition duration-300 border-b-2  2xl:text-2xl border-opacity-25 z-40 right-0 left-0 top-0 py-6 shadow-inner-header flex flex-col lg:flex-row justify-around items-center ${scroll && "bg-gray-900"} `} >
             <span className="flex justify-center items-center" >
                 <h1 className="font-black text-white text-2xl">La Frontera</h1>
             </span>
@@ -70,7 +70,7 @@ export default function Header(){
             </nav>
             <nav className="hidden lg:block" >
                 <button onClick={()=>push("/login")} className="mx-3 py-2 px-4 font-bold text-gray-100 border-2 rounded-lg border-gray-200 transition duration-300 hover:bg-white hover:text-gray-900 hover:border-white " >Login</button>
-                <button onClick={()=>push("/register")} className="mx-3 py-2 px-4 font-bold bg-blue-800 text-gray-100 rounded-lg">Register</button>
+                <button onClick={()=>push("/register")} className="mx-3 py-2 px-4 font-bold bg-yellow-600 text-gray-100 rounded-lg">Register</button>
             </nav>
         </header>
     )

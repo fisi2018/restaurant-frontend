@@ -9,8 +9,8 @@ import Card from "../../components/common/card";
 export default function Platos({data,message}){
     return(
         <LayoutAccount>
-            <section className="bg-hdr-wood" >
-                <h1 className="text-white text-center text-3xl font-black py-4" >Platos principales</h1>
+            <section className="bg-hdr-wood min-h-screen bg-cover " >
+                <h1 className="text-white text-center xl:text-5xl text-3xl font-black py-4" >Platos principales</h1>
                 <div className="p-2 justify-items-center max-w-full grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row auto-rows-auto" >
 
             {data && data!==""?

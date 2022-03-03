@@ -9,8 +9,8 @@ export default function Bebidas({message,data}){
     return(
         <LayoutAccount>
 
-        <section className="p-2 bg-hdr-wood">
-            <h1 className="text-center text-white text-3xl font-black py-4" >Bebidas</h1>
+        <section className="p-2 min-h-screen bg-cover bg-hdr-wood">
+            <h1 className="text-center text-white text-3xl xl:text-5xl font-black py-4" >Bebidas</h1>
             <div className=" p-2 justify-items-center max-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row auto-rows-auto" >
 
         {data && data!==""?

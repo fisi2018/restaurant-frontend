@@ -8,8 +8,8 @@ import { AiTwotoneSetting } from "react-icons/ai";
 export default function MyAccount({message,data}){
     return(
         <LayoutAccount>
-            <section className="flex flex-col w-full">
-            <div className=" bg-hdr-wood flex flex-col items-center p-6" >
+            <section className="flex flex-col w-full bg-hdr-wood justify-center min-h-screen ">
+            <div className=" xl:text-xl flex flex-col items-center p-6" >
             {data.img?
             <img src={`${API}/user/img/${data._id}`} alt="web profile restaurant"/>
             :
@@ -17,7 +17,7 @@ export default function MyAccount({message,data}){
                 <MdAccountCircle size="5rem" />
             </span>
             }
-            <h1 className="text-center text-3xl text-white font-black " >{data.name}</h1>
+            <h1 className="text-center xl:text-4xl text-3xl text-white font-black " >{data.name}</h1>
             <p className="text-gray-400" >{data.email}</p>
             <article className="flex p-6" >
                 <span className="flex flex-col text-white items-center" >
@@ -26,7 +26,7 @@ export default function MyAccount({message,data}){
                 </span>
             </article>
             </div>
-            <div className="p-4 flex flex-col items-center" >
+            <div className="p-4 flex flex-col bg-white items-center" >
                 <h2 className="text-center text-xl" >Configurar mi cuenta</h2>
                 <div className="grid grid-cols-2 py-4 divide-x-4" >
                     <ul className="flex flex-col justify-evenly items-center mr-4" >

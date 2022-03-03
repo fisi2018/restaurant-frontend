@@ -16,8 +16,8 @@ export default function Account({message,data,error}){
                 <div >
                     <header className="p-6 bg-hdr-wood" >
             <Toaster/>
-            <h1 className="text-3xl text-white text-center font-black" >La Frontera </h1>
-            <h2 className="text-center text-white" >Escoge entre una variedad de entradas, plato, bebidas y postres </h2>
+            <h1 className="text-3xl xl:text-5xl text-white text-center font-black" >La Frontera </h1>
+            <h2 className=" xl:text-xl text-center text-white" >Escoge entre una variedad de entradas, plato, bebidas y postres </h2>
                     </header>
             <section className=" min-h-screen grid grid-cols-1 md:grid-rows-2 md:grid-cols-3 gap-2" >
                 <div onClick={()=>push("/account/platos")} className=" restaurant-card md:col-span-2">

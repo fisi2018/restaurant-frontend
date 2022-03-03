@@ -7,8 +7,8 @@ import { verifyToken } from "../../utils/handleJwt";
 export default function Entradas({message,data}){
     return(
         <LayoutAccount>
-        <section className="bg-hdr-wood " >
-            <h1 className="text-center text-white text-3xl font-black py-4">Entradas</h1>
+        <section className="bg-hdr-wood min-h-screen bg-cover " >
+            <h1 className="text-center text-white text-3xl xl:text-5xl font-black py-4">Entradas</h1>
             <div className="p-2 justify-items-center max-w-full grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 grid-flow-row auto-rows-auto" >
 
             {data!==""?

@@ -53,11 +53,11 @@ export default function Register(){
     }
     return(
         <Layout>
-            <section className="min-h-screen bg-form-login flex justify-center items-center" >
+            <section className="min-h-screen bg-cover bg-form-login flex justify-center items-center" >
                 <Toaster/>
                 {
                     show?
-                    <form onSubmit={registerUser} className="flex flex-col bg-white p-6 border-yellow-500 border-t-4" >
+                    <form onSubmit={registerUser} className="flex flex-col bg-white  p-6 border-yellow-500 border-t-4" >
                         <h1 className="text-center text-xl mb-4" >Confirmación de email</h1>
                         <label htmlFor="code">
                             Código de verificación
@@ -71,12 +71,12 @@ export default function Register(){
                     </span>
                     </form>
                     :
-                <form onSubmit={getCode} className="flex flex-col bg-white p-6 border-yellow-500 border-t-4">
-                    <h1 className="text-center text-xl mb-4" >Registro de usuarios</h1>
+                <form onSubmit={getCode} className="flex flex-col xl:text-xl bg-white p-6 border-yellow-500 border-t-4">
+                    <h1 className="text-center xl:text-2xl text-xl mb-4" >Registro de usuarios</h1>
                     <label htmlFor="names">Nombres</label>
-                    <input value={form.name} onChange={handleChange} className={`rounded ring-0 focus:ring-0 focus:outline-0 focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.name?` border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. Roberto Martinez" name="name" type="text"/>
+                    <input value={form.name} onChange={handleChange} className={`rounded xl:mb-4 ring-0 focus:ring-0 focus:outline-0 focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.name?` border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. Roberto Martinez" name="name" type="text"/>
                     <label htmlFor="email">Email</label>
-                    <input value={form.email} onChange={handleChange} className={` rounded ring-0 focus:ring-0 focus:outline-0  focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.email?`border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. micorreo@gmail.com" name="email" type="email"/>
+                    <input value={form.email} onChange={handleChange} className={` rounded xl:mb-4 ring-0 focus:ring-0 focus:outline-0  focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.email?`border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. micorreo@gmail.com" name="email" type="email"/>
                     <label htmlFor="password">Password</label>
                     <input value={form.password} onChange={handleChange} className={` rounded ring-0 focus:ring-0 focus:outline-0  focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0  ${errors.password?`border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. 12345678" name="password" type="password"/>
                     <span className="flex justify-center mt-4 " >

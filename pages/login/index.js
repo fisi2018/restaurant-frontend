@@ -25,12 +25,12 @@ export default function Login(){
     }
     return(
         <Layout>
-            <section className="min-h-screen bg-form-login flex justify-center items-center " >
+            <section className="min-h-screen bg-form-login bg-cover flex justify-center items-center " >
                 <Toaster/>
-                <form onSubmit={startLogin} className="flex flex-col bg-white p-6 border-yellow-500 border-t-4" >
-                    <h1 className="text-center text-xl mb-4 " >Inicio de sesión</h1>
+                <form onSubmit={startLogin} className="flex flex-col xl:text-xl bg-white p-6 border-yellow-500 border-t-4" >
+                    <h1 className="text-center xl:text-2xl text-xl mb-4 " >Inicio de sesión</h1>
                     <label htmlFor="email">Email</label>
-                    <input value={form.email} onChange={handleChange} id="input-email-for-credentials-provider" className={`rounded ring-0 focus:ring-0 focus:outline-0 focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.email?` border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. micorreo@gmail.com" name="email" type="email"/>
+                    <input value={form.email} onChange={handleChange} id="input-email-for-credentials-provider" className={`rounded xl:mb-4 ring-0 focus:ring-0 focus:outline-0 focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.email?` border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. micorreo@gmail.com" name="email" type="email"/>
                     <label htmlFor="password">Password</label>
                     <input value={form.password} onChange={handleChange} id="input-password-for-credentials-provider" className={`rounded ring-0 focus:ring-0 focus:outline-0 focus:ring-offset-0 ring-offset-0 border-0 bg-transparent outline-0 ${errors.password?` border focus:border-red-500 border-red-500`:`border focus:border-green-500 border-green-500`}`} placeholder="e.g. 12345678" name="password" type="password"/>
                     <span className="flex justify-center mt-4 " >

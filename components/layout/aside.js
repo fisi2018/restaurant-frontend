@@ -16,21 +16,21 @@ export default function Aside(){
         active?setActive(false):setActive(true);
     }
     return(
-        <aside className={`${active?"w-14":"w-80"} sticky bottom-0 top-0 h-screen hidden sm:block left-0 bg-gray-700 px-2 transition-all duration-500`}>
+        <aside className={`${active?"w-14 xl:w-20 ":" xl:w-96 w-80"} sticky bottom-0 top-0 h-screen hidden sm:block left-0 bg-gray-800 px-2 xl:py-4 transition-all xl:text-xl duration-500`}>
             <article className="relative flex items-center overflow-hidden w-full h-12 p-2" >
-                 <h2 className=" absolute right-12 whitespace-nowrap text-white " >La Frontera</h2>
-                    <button onClick={changeActive}  className="burger-aside flex absolute right-2 " >
+                 <h2 className=" absolute right-12 xl:right-16 whitespace-nowrap  text-white " >La Frontera</h2>
+                    <button onClick={changeActive}  className="burger-aside flex absolute xl:right-4  right-2 " >
                         <GiHamburgerMenu size="1.5rem" color="white" />
                     </button>
             </article>
             <article className="relative flex items-center overflow-hidden w-full h-12 p-2" >
-                <span  className="icon-aside absolute flex items-center justify-center left-2 transition-all duration-500" >
+                <span  className="icon-aside absolute flex items-center justify-center left-2 xl:left-6 transition-all duration-500" >
                     <BsSearch size="1.5rem" color="white"/>
                     </span>
                     <input className="absolute border-b-1 border-gray-400 border-t-0 border-r-0 border-l-0 text-white left-16 transition-all duration-500 bg-transparent focus:border-white focus:ring-0" placeholder="Buscar..." type="search"/>
             </article>
-            <ul>
-                <li className="li-aside-profile">
+            <ul className="xl:pl-4" >
+                <li className="li-aside-profile xl:my-4">
                     <Link href="/account" >
                         <a className="a-aside-profile button-aside hover:bg-white" >
                         <span className="span-icon-profile" >
@@ -40,7 +40,7 @@ export default function Aside(){
                         </a>
                     </Link>
                 </li>
-                <li className="li-aside-profile" >
+                <li className="li-aside-profile xl:my-4" >
                     <Link href="/account/promociones" >
                         <a className="a-aside-profile button-aside hover:bg-white">
                             <span className="span-icon-profile" >
@@ -50,7 +50,7 @@ export default function Aside(){
                         </a>
                     </Link>
                 </li>
-                <li className="li-aside-profile" >
+                <li className="li-aside-profile xl:my-4" >
                     <Link href="/account/pedidos" >
                         <a className="a-aside-profile button-aside hover:bg-white" >
                             <span className="span-icon-profile relative" >
@@ -65,7 +65,7 @@ export default function Aside(){
                         </a>
                     </Link>
                 </li>
-                <li className="li-aside-profile" >
+                <li className="li-aside-profile xl:my-4" >
                     <Link href="/account/myAccount" >
                         <a className="a-aside-profile button-aside hover:bg-white" >
                             <span className="span-icon-profile" >
@@ -75,7 +75,7 @@ export default function Aside(){
                         </a>
                     </Link>
                 </li>
-                <li className="li-aside-profile" >
+                <li className="li-aside-profile xl:my-4" >
                     <button onClick={logout} className="button-aside w-full overflow-hidden relative flex items-center h-full rounded-lg transition-all duration-500 hover:bg-white ">
 
                             <span className="span-icon-profile " >

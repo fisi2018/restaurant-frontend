@@ -37,8 +37,8 @@ export default function Pedidos({message,data,token}){
     
     return(
         <LayoutAccount>
-            <section className="flex flex-col items-center bg-hdr-wood" >
-                <h1 className="bg-hdr-wood w-full text-white text-center py-6 text-3xl font-black" >Sección de pedidos</h1>
+            <section className="flex flex-col bg-cover items-center min-h-screen bg-hdr-wood" >
+                <h1 className=" w-full text-white text-center py-6 text-3xl font-black" >Sección de pedidos</h1>
                 
                 <form className="flex my-6 flex-col bg-white p-6 border-yellow-500 border-t-4 shadow-my-format" onSubmit={generarPedido} >
                     <h2 className="text-center mb-4 text-2xl" >Realizar pedido</h2>
